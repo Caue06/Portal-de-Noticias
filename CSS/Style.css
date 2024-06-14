@@ -1,46 +1,140 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: 0px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.header{
-    background-color: gray;
+.fundo{
+    background-size: 1440px;
+    background-image: url(/Image/background_manga.png);
+}
+
+.logo{
+    cursor: pointer;
+    width: 300px;
+    height: 80px;
+}
+.logo:hover{
+    filter: brightness(.4);
+}
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100px;
+    background-color: #1e1e1e ;
 }
 
-.titulo{
+.nav_border{
+    background-color: #AD00FF;
+    width: auto;
+    height: 15px;
+}
+
+.td_nav{
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    font-size: 25px;
 }
 
-.conteudoPrincipal{
-    padding: 20px;
-    margin: auto;
-    margin-top: 20px;
+.nav{
+    padding: 0px 10px;
+    margin: 15px;
+    color:#1e1e1e;
+    background-color: #AD00FF;
+    border: 2px solid#AD00FF;
+    border-radius: 15px;
+}
+
+.nav:hover{
+    color:#AD00FF;
+    background-color: #1e1e1e;
+    transition: 0.3s;
+}
+
+.conteudo{
+    border :6px solid#AD00FF;
+    background-color: #1e1e1e;
     border-radius: 50px;
+    cursor: pointer;
+}
+
+.conteudo_principal{
+    width: 950px ;
+    height: 590px;
+    margin: 70px auto;
+}
+
+.img_principal{
+    border-radius: 15px;
+    margin: 20px 20px 20px 20px;
+    width: 910px;
+    height: 450px;
+}
+
+.text_principal{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.cont1,.cont2,.cont3,.cont4{
+    margin: 30px 20px;
+    width: 530px;
+    height: 345px;
+}
+
+.img_sec{
+    margin: 15px 15px 0px 15px;
+    border-radius: 15px;
+    width: 500px;
+    height: 275px ;
+}
+
+.conteudo_sec1{
+    display: flex;
+    justify-content:center;
+}
+
+.conteudo_sec2{
     display: flex;
     justify-content: center;
-    background-color: rgb(163, 162, 162);
-    width: 1000px;
-    height: 300px;
-}
-.conteudoPrincipal:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    border-color: 20px black;
 }
 
-.imagem{
-    background-color: grey;
-    margin: auto;
-    width: 600px;
-    height: 250px;
-}
-.textoPrincipal{
-    margin-top:21px;
+.text_sec{
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
 
+.animes{
+    margin:50px 0px;
+    width: 100%;
+    height: 120px;
+    background-color: #1e1e1e;
+}
 
+.titulo_anime{
+    text-align: center;
+    color:white
+}
+
+.text_anime{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 15px;
+    color: white;
+}
+
+@media screen and (max-width: 880px){
+    .conteudo_principal{
+        width: 100%;
+    }
+}
